@@ -2,6 +2,8 @@
 
 An AngularJS datepicker directive created for use in [Rallly](http://github.com/lukevella/Rallly).
 
+[View Demo](http://lukevella.github.io/ngDatepicker/)
+
 ## Dependencies
 
 You will need:
