@@ -39,17 +39,15 @@ Then just add the `datepicker` attribute to an element along with an `ng-model`.
 
 ``` html
 <body ng-app="myApp">
-    <div ng-controller="MyCtrl">
-        <div datepicker ng-model="myModel" control="myControl">
+    <div datepicker ng-model="myModel" control="myControl">
 
-        </div>
-        <ul>
-            <li ng-repeat="date in myModel">
-                {{date}} 
-                <button ng-click="myControl.removeDate(date)">Remove</button>
-            </li>
-        </ul>
     </div>
+    <ul>
+        <li ng-repeat="date in myModel">
+            {{date}} 
+            <button ng-click="myControl.removeDate(date)">Remove</button>
+        </li>
+    </ul>
 </body>
 ```
 
