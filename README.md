@@ -35,7 +35,7 @@ Add the `ngDatepicker` module as a dependency to your app.
 var app = angular.module('myApp',['ngDatepicker'])
 ```
 
-Then just add the `datepicker` attribute to an element along with an `ng-model`. Optionally, you can choose to pass a control attribute which will allow you to remove dates from the date picker programmatically.
+Then just add the `datepicker` attribute to an element along with an `ng-model`. Optionally, you can choose to pass a `control` attribute which will allow you to remove dates from the date picker programmatically.
 
 ``` html
 <body ng-app="myApp">
