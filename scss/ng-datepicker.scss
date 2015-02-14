@@ -1,0 +1,124 @@
+$green-clr: #75C062;
+$pink-clr: #E55A84;
+$red-clr: #E06488;
+
+$text-clr: #3D4043;
+$text-2-clr: #828B9A;
+$text-3-clr: #AEB4BE;
+$border-clr: #D9DDE3;
+
+
+.ng-submitted .ng-invalid > .date-picker {
+    border-color: $pink-clr;
+}
+
+.date-picker {
+    border: 1px solid $border-clr;
+    border-radius: 2px;
+    .wrapper {
+        padding:20px;
+    }
+    .date-picker-head {
+        display:table;
+        width:100%;
+        margin-bottom:30px;
+        text-align:center;
+        .title {
+            display:inline-block;
+            font-weight:bold;
+            font-size: 18px;
+        }
+        .arrow {
+            text-decoration:none;
+            color: $text-3-clr;
+            position:relative;
+            border: 1px solid $border-clr;
+            display:inline-block;
+            width: 35px;
+            border-radius: 2px;
+            font-size: 12px;
+            line-height:30px;
+            text-align:center;
+            float:left;
+            margin-left:10px;
+            box-shadow: 0 1px 1px rgba($border-clr,0.5);
+            &:last-child {
+                float:right;
+                margin-left:0;
+                margin-right:10px;
+
+            }
+            &:hover {
+                color: $text-clr;
+            }
+            &:active {
+                box-shadow:none;
+            }
+
+        }
+    }
+    .dow {
+        padding-bottom: 10px;
+        display:table;
+        width:100%;
+        border-bottom: 2px solid $border-clr;
+        margin-bottom: 10px;
+        .day {
+            font-size: 14px;
+            display:table-cell;
+            text-align:center;
+            color: $pink-clr;
+        }
+    }
+    .values {
+        .value {
+            display:inline-block;
+            width: (100% / 7);
+            text-align:center;
+            font-size: 14px;
+            line-height:55px;
+            position:relative;
+            font-weight: bold;
+            &.today {
+                color:#818176;
+                &:after {
+                    opacity:1;
+                    background: rgba(yellow, 0.1);
+                }
+            }
+            &.outside {
+                color: $text-3-clr;
+                font-weight:normal;
+            }
+            &:after {
+                content: " ";
+                cursor:pointer;
+                opacity: 0;
+                position:absolute;
+                $size: 42px;
+                width:$size;
+                height:$size;
+                margin-left:$size * -0.5;
+                margin-top:$size * -0.5;
+                left:50%;
+                top:50%;
+                border-radius: 2px;
+            }
+            &:hover {
+                &:after {
+                    opacity:1;
+                    background: rgba($border-clr,0.4);
+                }
+                cursor: pointer;
+            }
+            &.active {
+                background:white;
+                color: $green-clr;
+                &:after {
+                    opacity:1;
+                    background: rgba($green-clr,0.1);
+                }
+            }
+        }
+    }
+}

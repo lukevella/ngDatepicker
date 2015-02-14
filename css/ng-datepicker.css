@@ -1,0 +1,91 @@
+.ng-submitted .ng-invalid > .date-picker {
+  border-color: #E55A84; }
+
+.date-picker {
+  border: 1px solid #D9DDE3;
+  border-radius: 2px; }
+  .date-picker .wrapper {
+    padding: 20px; }
+  .date-picker .date-picker-head {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center; }
+    .date-picker .date-picker-head .title {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 18px; }
+    .date-picker .date-picker-head .arrow {
+      text-decoration: none;
+      color: #AEB4BE;
+      position: relative;
+      border: 1px solid #D9DDE3;
+      display: inline-block;
+      width: 35px;
+      border-radius: 2px;
+      font-size: 12px;
+      line-height: 30px;
+      text-align: center;
+      float: left;
+      margin-left: 10px;
+      box-shadow: 0 1px 1px rgba(217, 221, 227, 0.5); }
+      .date-picker .date-picker-head .arrow:last-child {
+        float: right;
+        margin-left: 0;
+        margin-right: 10px; }
+      .date-picker .date-picker-head .arrow:hover {
+        color: #3D4043; }
+      .date-picker .date-picker-head .arrow:active {
+        box-shadow: none; }
+  .date-picker .dow {
+    padding-bottom: 10px;
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid #D9DDE3;
+    margin-bottom: 10px; }
+    .date-picker .dow .day {
+      font-size: 14px;
+      display: table-cell;
+      text-align: center;
+      color: #E55A84; }
+  .date-picker .values .value {
+    display: inline-block;
+    width: 14.28571%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 55px;
+    position: relative;
+    font-weight: bold; }
+    .date-picker .values .value.today {
+      color: #818176; }
+      .date-picker .values .value.today:after {
+        opacity: 1;
+        background: rgba(255, 255, 0, 0.1); }
+    .date-picker .values .value.outside {
+      color: #AEB4BE;
+      font-weight: normal; }
+    .date-picker .values .value:after {
+      content: " ";
+      cursor: pointer;
+      opacity: 0;
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      margin-left: -21px;
+      margin-top: -21px;
+      left: 50%;
+      top: 50%;
+      border-radius: 2px; }
+    .date-picker .values .value:hover {
+      cursor: pointer; }
+      .date-picker .values .value:hover:after {
+        opacity: 1;
+        background: rgba(217, 221, 227, 0.4); }
+    .date-picker .values .value.active {
+      background: white;
+      color: #75C062; }
+      .date-picker .values .value.active:after {
+        opacity: 1;
+        background: rgba(117, 192, 98, 0.1); }
+
+/*# sourceMappingURL=ng-datepicker.css.map */

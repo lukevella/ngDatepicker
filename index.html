@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>ngDatepicker</title>
+        <link rel="stylesheet" href="css/ng-datepicker.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/ng-datepicker.js"></script>
+        <script type="text/javascript">
+                var app = angular.module('myapp',['ngDatepicker'])
+                .controller('MyCtrl', function($scope){
+                    $scope.model = [];
+                    $scope.$watchCollection('model', function(newValue){
+                        console.log(newValue);
+                    })
+                });
+        </script>
+    </head>
+    <body ng-app="myapp" style="font-family: Arial; text-align:center; margin: 40px auto; width:600px">            
+        <h1>ngDatepicker</h1>
+        <div ng-controller="MyCtrl">
+            <div datepicker ng-model="model" control="control">
+
+            </div>
+        </div>
+    </body>
+</html>
