@@ -5,7 +5,7 @@ angular.module('ngDatepicker', [])
         require : 'ngModel',
         scope : {
             model : '=ngModel',
-            control : '='
+            control : '=?'
         },
         template: '<div class="date-picker"> <div class="wrapper"> <div class="date-picker-head"> <a href="#" class="arrow" ng-click="prevMonth()">&#10094;</a> <span class="title"> <span class="title-text">{{title}}</span> </span> <a href="#" class="arrow" ng-click="nextMonth()">&#10095;</a> </div><div class="dow"> <div class="day"> Su </div><div class="day"> Mo </div><div class="day"> Tu </div><div class="day"> We </div><div class="day"> Th </div><div class="day"> Fr </div><div class="day"> Sa </div></div><div class="values"> <div ng-repeat="day in days" class="value" ng-class="{outside : day.isOutsideMonth, today : day.isToday, active : isActive(day.date)}" ng-click="selectDay(day)">{{day.date | date : "d"}}</div></div></div></div>',
         link : function(scope, el, attrs, ngModel){

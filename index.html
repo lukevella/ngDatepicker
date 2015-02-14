@@ -8,19 +8,23 @@
         <script type="text/javascript">
                 var app = angular.module('myapp',['ngDatepicker'])
                 .controller('MyCtrl', function($scope){
-                    $scope.model = [];
                     $scope.$watchCollection('model', function(newValue){
                         console.log(newValue);
                     })
                 });
         </script>
     </head>
-    <body ng-app="myapp" style="font-family: Arial; text-align:center; margin: 40px auto; width:600px">            
-        <h1>ngDatepicker</h1>
-        <div ng-controller="MyCtrl">
-            <div datepicker ng-model="model" control="control">
+<body ng-app="myapp" style="font-family: Arial; text-align:center; margin: 40px auto; width:600px">
+    <h1>ngDatepicker</h1>
+    <div ng-controller="MyCtrl">
+        <div datepicker ng-model="model" control="control">
 
-            </div>
         </div>
-    </body>
+        <ul>
+            <li ng-repeat="date in model">
+                {{date}} <button ng-click="control.removeDate(date)">Remove</button>
+            </li>
+        </ul>
+    </div>
+</body>
 </html>
