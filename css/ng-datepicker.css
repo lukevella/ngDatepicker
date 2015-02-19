@@ -39,13 +39,14 @@
         box-shadow: none; }
   .date-picker .dow {
     padding-bottom: 10px;
-    display: table;
+    display: flex;
     width: 100%;
     border-bottom: 2px solid #D9DDE3;
     margin-bottom: 10px; }
     .date-picker .dow .day {
-      font-size: 14px;
-      display: table-cell;
+      font-size: em(14);
+      width: 14.28571%;
+      display: flex-item;
       text-align: center;
       color: #E55A84; }
   .date-picker .values .value {
