@@ -24,7 +24,8 @@ angular.module('ngDatepicker', [])
                 return true;
             }
 
-            var today = Date.today(), activeDate = today.clone();
+            var today = Date.today(),
+                activeDate = today.clone();
             var setMonth = function(toDate){
                 activeDate = toDate;
                 var startDate = activeDate.clone().moveToFirstDayOfMonth(), // get first day of active month
@@ -80,10 +81,10 @@ angular.module('ngDatepicker', [])
                 return (returnIndex) ? -1 : false;
             }
             scope.nextMonth = function(){
-                setMonth(activeDate.add(1).months());
+                setMonth(activeDate.clone().add(1).months());
             }
             scope.prevMonth = function(){
-                setMonth(activeDate.add(-1).months());
+                setMonth(activeDate.clone().add(-1).months());
             }
 
             scope.control.removeDate = function(date){
