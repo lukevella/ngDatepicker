@@ -17,14 +17,14 @@ To use you will need to  the following scripts after you include AngularJS
 
 ``` html
 <!-- AngularJS -->
-<script src="js/date.js"></script>
-<script src="js/ng-datepicker.js"></script>
+<script src="path/to/js/date.js"></script>
+<script src="path/to/js/ng-datepicker.js"></script>
 ```
 
 Add the stylesheet
 
 ``` html
-<link rel="stylesheet" href="css/ng-datepicker.css">
+<link rel="stylesheet" href="path/to/css/ng-datepicker.css">
 ```
 
 ## How to use
