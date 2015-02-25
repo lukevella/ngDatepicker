@@ -9,7 +9,7 @@ An AngularJS datepicker directive created for use in [Rallly](http://github.com/
 You will need:
 
 * AngularJS (1.x)
-* [date.js](http://www.datejs.com)
+* [date.js](http://www.datejs.com) (included)
 
 ## Install
 
