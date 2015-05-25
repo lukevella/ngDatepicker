@@ -13,7 +13,7 @@ You will need:
 
 ## Install
 
-To use you will need to  the following scripts after you include AngularJS
+To use you will need to add the following scripts after you include AngularJS
 
 ``` html
 <!-- AngularJS -->
